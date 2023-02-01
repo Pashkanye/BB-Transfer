@@ -310,7 +310,7 @@ body {
 
 .route-price {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .btn-route {
@@ -331,6 +331,15 @@ body {
 }
 
 /* cars */
+.car-list {
+  justify-content: space-between;
+}
+
+.car-list-item {
+  min-width: 200px;
+  padding: 30px 25px;
+  background-color: #3172b9;
+}
 
 /* rules */
 .rules-text {
@@ -482,6 +491,23 @@ body {
   font-size: 14px;
   line-height: 180%;
   color: #787878;
+}
+
+/* scroll up */
+.scroll-up {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 8000;
+  background-color: #3172b9;
+  background-image: url(/img/arrow-up-outline.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
 }
 
 /* footer */
