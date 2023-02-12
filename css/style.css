@@ -331,15 +331,28 @@ body {
 }
 
 /* cars */
-.car-list {
+/* .car-list {
   justify-content: space-between;
 }
 
 .car-list-item {
-  min-width: 200px;
-  padding: 30px 25px;
-  background-color: #3172b9;
+  max-width: 200px;
+  padding-top: 0;
+  border-radius: 5px;
+  border: 1px solid #3172b9;
 }
+
+.car-class-image {
+  width: 200px;
+}
+
+.car-class {
+  text-align: center;
+}
+
+.car-price {
+  text-align: center;
+} */
 
 /* rules */
 .rules-text {
@@ -361,7 +374,7 @@ body {
 }
 
 .rules-list {
-  list-style-image: url(/img/rules-list-style.svg);
+  list-style-image: url(../img/rules-list-style.svg);
 }
 
 .rules-list-item {
@@ -503,7 +516,7 @@ body {
   right: 50px;
   z-index: 8000;
   background-color: #3172b9;
-  background-image: url(/img/arrow-up-outline.svg);
+  background-image: url(../img/arrow-up-outline.svg);
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
