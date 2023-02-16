@@ -587,3 +587,52 @@ body {
 .social-link-mail {
   background-image: url(../img/mail\ logo.svg);
 }
+
+/* popup */
+.popup {
+  position: fixed;
+  z-index: 8000;
+  bottom: 20%;
+  right: 30%;
+  max-width: 400px;
+  padding: 50px 20px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.popup-title {
+  margin-bottom: 20px;
+}
+
+.popup-subtitle {
+  margin-bottom: 20px;
+}
+
+.popup-container {
+  padding: 20px 80px;
+  border: solid 1px #c4c4c4;
+  border-radius: 15px;
+}
+
+.popup-container:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.popup-link {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  padding: 25px 10px;
+  margin-bottom: 15px;
+  background-color: #3172b9;
+  border-radius: 5px;
+  line-height: 40px;
+  font-size: 22px;
+  color: #fff;
+  align-items: center;
+}
+
+.popup-messenger-logo {
+  margin-right: 5px;
+  width: 50px;
+}
