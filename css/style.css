@@ -298,11 +298,16 @@ body {
   border-bottom: 4px solid #3172b9;
 }
 
+.rout-background {
+  background-image: url(../img/vitebsk-bg.jfif);
+  width: 270px;
+}
+
 .route-name {
   position: relative;
   left: -10px;
-  top: -50px;
-  width: 180px;
+  top: -70px;
+  width: 220px;
   padding: 5px 10px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
@@ -328,6 +333,15 @@ body {
   align-items: center;
   position: relative;
   top: -25px;
+}
+
+/* excursion */
+.excursion-list {
+  justify-content: space-around;
+}
+
+.excursion-item {
+  max-width: 300px;
 }
 
 /* cars */
@@ -593,7 +607,7 @@ body {
   position: fixed;
   z-index: 8000;
   bottom: 20%;
-  right: 30%;
+  right: 0;
   max-width: 400px;
   padding: 50px 20px;
   border-radius: 15px;
