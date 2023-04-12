@@ -311,14 +311,39 @@ body {
 
 .routes-item:nth-child(1) .routes-preview .rout-background {
   background-image: url(../img/brest-bg.jpg);
+  background-position: 0px -40px;
 }
 
 .routes-item:nth-child(2) .routes-preview .rout-background {
   background-image: url(../img/vitebsk-bg.jfif);
+  background-position: 0px -20px;
 }
 
 .routes-item:nth-child(3) .routes-preview .rout-background {
-  background-image: url(../img/brest-bg.jpg);
+  background-image: url(../img/gomel-bg.jpg);
+}
+
+.routes-item:nth-child(4) .routes-preview .rout-background {
+  background-image: url(../img/grodno-bg.jpg);
+  background-position: 0px -20px;
+}
+
+.routes-item:nth-child(5) .routes-preview .rout-background {
+  background-image: url(../img/mogilev-bg.jpg);
+}
+
+.routes-item:nth-child(6) .routes-preview .rout-background {
+  background-image: url(../img/airport-minsk-bg.jpg);
+  background-position: 0px -20px;
+}
+
+.routes-item:nth-child(7) .routes-preview .rout-background {
+  background-image: url(../img/moscow-bg.jpg);
+}
+
+.routes-item:nth-child(8) .routes-preview .rout-background {
+  background-image: url(../img/saint-petersburg-bg.jpg);
+  background-position: 0px -40px;
 }
 
 .route-name {
