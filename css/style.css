@@ -204,7 +204,7 @@ body {
 }
 
 .header-link {
-  padding-bottom: auto;
+  padding: 10px 0;
   font-weight: 600;
   color: #1c1c1c;
   font-size: 16px;
@@ -213,6 +213,7 @@ body {
 .header-link:hover {
   color: #3172b9;
   font-weight: 700;
+  border-top: 4px solid #3172b9;
   border-bottom: 4px solid #3172b9;
 }
 
@@ -220,7 +221,7 @@ body {
 .hero {
   min-height: 700px;
   padding: 100px 0 150px;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7) -2.9%, rgba(53, 65, 83, 0) 90%), url(../img/bg-volwo.png);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7) -2.9%, rgba(53, 65, 83, 0) 90%), url(../img/bg-volwo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -310,39 +311,39 @@ body {
 }
 
 .routes-item:nth-child(1) .routes-preview .rout-background {
-  background-image: url(../img/brest-bg.jpg);
+  background-image: url(../img/brest-bg1.jpg);
   background-position: 0px -40px;
 }
 
 .routes-item:nth-child(2) .routes-preview .rout-background {
-  background-image: url(../img/vitebsk-bg.jfif);
+  background-image: url(../img/vitebsk-bg1.jpg);
   background-position: 0px -20px;
 }
 
 .routes-item:nth-child(3) .routes-preview .rout-background {
-  background-image: url(../img/gomel-bg.jpg);
+  background-image: url(../img/gomel-bg1.jpg);
 }
 
 .routes-item:nth-child(4) .routes-preview .rout-background {
-  background-image: url(../img/grodno-bg.jpg);
+  background-image: url(../img/grodno-bg1.jpg);
   background-position: 0px -20px;
 }
 
 .routes-item:nth-child(5) .routes-preview .rout-background {
-  background-image: url(../img/mogilev-bg.jpg);
+  background-image: url(../img/mogilev-bg1.jpg);
 }
 
 .routes-item:nth-child(6) .routes-preview .rout-background {
-  background-image: url(../img/airport-minsk-bg.jpg);
+  background-image: url(../img/airport-minsk-bg1.jpg);
   background-position: 0px -20px;
 }
 
 .routes-item:nth-child(7) .routes-preview .rout-background {
-  background-image: url(../img/moscow-bg.jpg);
+  background-image: url(../img/moscow-bg1.jpg);
 }
 
 .routes-item:nth-child(8) .routes-preview .rout-background {
-  background-image: url(../img/saint-petersburg-bg.jpg);
+  background-image: url(../img/saint-petersburg-bg1.jpg);
   background-position: 0px -40px;
 }
 
