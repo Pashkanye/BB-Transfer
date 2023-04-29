@@ -712,3 +712,37 @@ body {
   margin-right: 5px;
   width: 50px;
 }
+
+@media only screen and (max-width : 480px) {
+
+  body {
+    min-width: 420px;
+  }
+
+  .container {
+    width: 400px;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  .contacts-list {
+    flex-direction: column;
+  }
+
+  .contacts-item {
+    align-items: center;
+    background-position: center top;
+    padding-bottom: 80px;
+  }
+
+  .popup {
+    width: 300px;
+  }
+
+  .popup-content {
+    max-width: 200px;
+  }
+
+}
