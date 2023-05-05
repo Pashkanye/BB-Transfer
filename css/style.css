@@ -199,8 +199,12 @@ body {
   height: 45px;
 }
 
-.header-list-item:not(:last-child) {
-  margin-right: 30px;
+.header-list {
+  justify-content: space-around;
+}
+
+.header-list-item {
+  padding: 10px 20px;
 }
 
 .header-link {
@@ -719,12 +723,21 @@ body {
     min-width: 420px;
   }
 
+  .flex {
+    flex-wrap: wrap;
+  }
+
   .container {
     width: 400px;
   }
 
   .header-container {
-    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .header-logo {
+    margin-right: 30px;
+    width: 150px;
   }
 
   .contacts-list {
@@ -735,6 +748,10 @@ body {
     align-items: center;
     background-position: center top;
     padding-bottom: 80px;
+  }
+
+  .hero {
+    background-size: contain;
   }
 
   .popup {
