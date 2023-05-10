@@ -165,6 +165,7 @@ body {
   padding-left: 35px;
   background-repeat: no-repeat;
   background-position: left center;
+  border-radius: 5px;
 }
 
 .tel-list-item:not(:last-child) {
@@ -173,12 +174,13 @@ body {
 
 .tel-list-item:nth-child(1) {
   background-image: url(../img/a1-logo.png);
-  background-position: 7px 0;
+  background-position: 7px 10px;
   background-size: 15px;
 }
 
 .tel-list-item:nth-child(2) {
   background-image: url(../img/mts-logo.png);
+  background-position: 5px 15px;
   background-size: 30px;
 }
 
@@ -188,11 +190,11 @@ body {
 }
 
 .telegram-logo {
-  height: 35px;
+  height: 45px;
 }
 
 .viber-logo {
-  height: 40px;
+  height: 45px;
 }
 
 .whatsapp-logo {
@@ -286,7 +288,7 @@ body {
 .routes-list {
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .routes-item {
@@ -382,7 +384,14 @@ body {
 }
 
 .excursion-item {
+  flex-direction: column;
   max-width: 300px;
+  align-items: center;
+}
+
+.excursion-type-image {
+  width: 80px;
+  height: 80px;
 }
 
 /* cars */
@@ -456,6 +465,10 @@ body {
   border-bottom: 1px solid #dadada;
 }
 
+.reviews-list {
+  justify-content: space-around;
+}
+
 .reviews-item {
   flex-direction: column;
   width: 370px;
@@ -463,10 +476,6 @@ body {
   padding-bottom: 30px;
   border: 1px solid #e4e4e4;
   border-radius: 5px;
-}
-
-.reviews-item:not(:nth-child(3n)) {
-  margin-right: 30px;
 }
 
 .reviews-item-descr {
@@ -578,71 +587,6 @@ body {
   border-radius: 50%;
 }
 
-/* footer */
-.footer {
-  padding: 42px 0;
-}
-
-.footer-copy {
-  font-size: 12px;
-  line-height: 16px;
-  color: #787878;
-}
-
-.footer-link {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  color: #787878;
-}
-
-.footer-container {
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer-left,
-.footer-right {
-  align-items: center;
-}
-
-.footer-logo {
-  margin-right: 25px;
-}
-
-.footer-item:not(:last-child) {
-  margin-right: 28px;
-}
-
-.footer-nav {
-  margin-right: 56px;
-}
-
-.social-link {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.social-item:not(:last-child) {
-  margin-right: 32px;
-}
-
-.social-link-twitter {
-  background-image: url(../img/twitter\ logo.svg);
-}
-
-.social-link-linkedin {
-  background-image: url(../img/linkedin\ logo.svg);
-}
-
-.social-link-mail {
-  background-image: url(../img/mail\ logo.svg);
-}
-
 /* popup */
 .popup {
   position: fixed;
@@ -654,8 +598,7 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
   top: 0;
   left: 0;
-  opacity: 0;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .popup:target {
@@ -677,7 +620,7 @@ body {
   background-color: #fff;
   max-width: 800px;
   border: 1px solid #c4c4c4;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .popup-title {
@@ -700,14 +643,15 @@ body {
 
 .popup-link {
   display: flex;
-  width: 200px;
+  width: 100%;
   height: 40px;
   padding: 25px 10px;
   margin-bottom: 15px;
   background-color: #3172b9;
   border-radius: 5px;
   line-height: 40px;
-  font-size: 22px;
+  font-weight: 500;
+  font-size: 18px;
   color: #fff;
   align-items: center;
 }
@@ -715,6 +659,11 @@ body {
 .popup-messenger-logo {
   margin-right: 5px;
   width: 50px;
+}
+
+.popup-tel {
+  font-weight: 500;
+  color: #fff;
 }
 
 @media only screen and (max-width : 480px) {
@@ -736,8 +685,22 @@ body {
   }
 
   .header-logo {
-    margin-right: 30px;
+    margin-right: auto;
+    width: 160px;
+  }
+
+  .header-list {
+    justify-content: space-between;
+  }
+
+  .header-list-item {
     width: 150px;
+    text-align: center;
+  }
+
+  .header-contacts {
+    margin-right: 0;
+    padding-top: 20px;
   }
 
   .contacts-list {
@@ -750,16 +713,80 @@ body {
     padding-bottom: 80px;
   }
 
-  .hero {
-    background-size: contain;
+  .tel-list-item:not(:last-child) {
+    margin-bottom: 20px;
   }
 
-  .popup {
-    width: 300px;
+  .messenger-list-item {
+    align-content: center;
+    justify-content: center;
+    height: 45px;
+  }
+
+  .hero {
+    background-size: cover;
+    min-height: 300px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7) -2.9%, rgba(53, 65, 83, 0) 60%), url(../img/bg-volwo-mobile.jpg);
+  }
+
+  .hero-title {
+    padding: 5px 10px;
+    max-width: 350px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  .hero-descr {
+    max-width: 300px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  .routes-item {
+    max-width: 370px;
+  }
+
+  .routes-preview {
+    width: 360px;
+  }
+
+  .rout-background {
+    width: 360px;
+  }
+
+  .reviews-item-descr {
+    max-width: 260px;
+  }
+
+  .reviews-item {
+    max-width: 340px;
+  }
+
+  .reviews-item:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .popup-content {
-    max-width: 200px;
+    min-width: 370px;
+    max-width: 400px;
+  }
+
+  .popup-container {
+    padding: 25px 35px;
+  }
+
+  .tel-list-item {
+    padding: 10px 15px;
+    padding-left: 40px;
+    background-color: #3172b9;
+  }
+
+  .scroll-up {
+    bottom: 20px;
+    right: 20px;
   }
 
 }
