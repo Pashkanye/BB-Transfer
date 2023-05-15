@@ -166,6 +166,9 @@ body {
   background-repeat: no-repeat;
   background-position: left center;
   border-radius: 5px;
+  padding: 10px 15px;
+  padding-left: 40px;
+  background-color: #3172b9;
 }
 
 .tel-list-item:not(:last-child) {
@@ -623,8 +626,13 @@ body {
   border-radius: 15px;
 }
 
-.popup-title {
+.popup-header {
   margin-bottom: 20px;
+}
+
+.popup-title {
+  display: inline-block;
+  margin-right: auto;
 }
 
 .popup-subtitle {
@@ -639,6 +647,17 @@ body {
 
 .popup-container:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.popup-close {
+  display: inline-block;
+  position: relative;
+  left: 40%;
+}
+
+.popup-close-svg {
+  width: 40px;
+  height: 40px;
 }
 
 .popup-link {
@@ -776,6 +795,10 @@ body {
 
   .popup-container {
     padding: 25px 35px;
+  }
+
+  .popup-close {
+    left: 35%;
   }
 
   .tel-list-item {
