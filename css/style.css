@@ -82,6 +82,7 @@ body {
   font-weight: 600;
   font-size: 15px;
   text-transform: uppercase;
+  text-align: center;
   padding: 15px 35px;
   background-color: #3172b9;
   color: #fff;
@@ -148,7 +149,7 @@ body {
 
 .tel-list {
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .header-tel {
@@ -168,7 +169,6 @@ body {
   border-radius: 5px;
   padding: 10px 15px;
   padding-left: 40px;
-  background-color: #3172b9;
 }
 
 .tel-list-item:not(:last-child) {
@@ -177,7 +177,7 @@ body {
 
 .tel-list-item:nth-child(1) {
   background-image: url(../img/a1-logo.png);
-  background-position: 7px 10px;
+  background-position: 13px 10px;
   background-size: 15px;
 }
 
@@ -228,7 +228,7 @@ body {
 
 /* hero */
 .hero {
-  min-height: 700px;
+  min-height: 755px;
   padding: 100px 0 150px;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7) -2.9%, rgba(53, 65, 83, 0) 90%), url(../img/bg-volwo.jpg);
   background-size: cover;
@@ -313,7 +313,6 @@ body {
   height: 150px;
   padding: 5px;
   align-items: flex-end;
-  /* background-size: 270px 150px; */
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 4px solid #3172b9;
@@ -396,30 +395,6 @@ body {
   width: 80px;
   height: 80px;
 }
-
-/* cars */
-/* .car-list {
-  justify-content: space-between;
-}
-
-.car-list-item {
-  max-width: 200px;
-  padding-top: 0;
-  border-radius: 5px;
-  border: 1px solid #3172b9;
-}
-
-.car-class-image {
-  width: 200px;
-}
-
-.car-class {
-  text-align: center;
-}
-
-.car-price {
-  text-align: center;
-} */
 
 /* rules */
 .rules-text {
@@ -601,7 +576,8 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
   top: 0;
   left: 0;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .popup:target {
@@ -612,13 +588,14 @@ body {
 .popup-body {
   height: 800px;
   width: 500px;
-  /* margin: 0 auto; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .popup-content {
+  position: relative;
+
   padding: 20px 30px;
   background-color: #fff;
   max-width: 800px;
@@ -651,8 +628,9 @@ body {
 
 .popup-close {
   display: inline-block;
-  position: relative;
-  left: 40%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .popup-close-svg {
@@ -681,8 +659,8 @@ body {
 }
 
 .popup-tel {
-  font-weight: 500;
-  color: #fff;
+  font-weight: 600;
+  color: #1c1c1c;
 }
 
 @media only screen and (max-width : 480px) {
@@ -717,6 +695,14 @@ body {
     text-align: center;
   }
 
+  .header-tel {
+    color: #fff;
+  }
+
+  .contacts-tel {
+    color: #fff;
+  }
+
   .header-contacts {
     margin-right: 0;
     padding-top: 20px;
@@ -736,15 +722,24 @@ body {
     margin-bottom: 20px;
   }
 
+  .messenger-list {
+    width: 200px;
+    justify-content: space-between;
+  }
+
   .messenger-list-item {
     align-content: center;
     justify-content: center;
     height: 45px;
+    width: 55px;
+    background-color: #3172b9;
+    border-radius: 5px;
   }
 
   .hero {
+    padding: 90px 0 120px;
     background-size: cover;
-    min-height: 300px;
+    min-height: 200px;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7) -2.9%, rgba(53, 65, 83, 0) 60%), url(../img/bg-volwo-mobile.jpg);
   }
 
@@ -797,14 +792,14 @@ body {
     padding: 25px 35px;
   }
 
-  .popup-close {
-    left: 35%;
-  }
-
   .tel-list-item {
     padding: 10px 15px;
     padding-left: 40px;
     background-color: #3172b9;
+  }
+
+  .popup-tel {
+    color: #fff;
   }
 
   .scroll-up {
